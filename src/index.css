@@ -119,3 +119,10 @@ footer {
   text-align: center;
   color: white;
 }
+
+@-moz-document url-prefix() {
+  /* CSS rules specific to Firefox */
+  body {
+    background-color: yellow;
+  }
+}
