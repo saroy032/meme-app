@@ -4,7 +4,7 @@ class NewPage extends React.Component {
     render() {
         return (
             <>
-                <h1>Testing routes...</h1>
+                <h5>Testing routes...</h5>
             </>
         )
     }
