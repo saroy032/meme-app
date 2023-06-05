@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from "./Header"
 import Meme from "./Meme";
-import Footer from "./Footer";
+import About from './About';
+import NewPage from './NewPage';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header name="Meme App" />
-        <Meme />
-        <Footer name="my foot" />
-      </div>
+      <Router>
+      <Routes>
+        <Route path="/" element={<Meme />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/about/newpage" element={<NewPage />} />
+      </Routes>
+    </Router>
     );
   }
 }
